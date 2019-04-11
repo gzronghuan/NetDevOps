@@ -7,12 +7,16 @@ def strings(str):
     spa_num = 0
     oth_num = 0
     for i in range(0,len(str)):
+        #判断字符
         if str[i].isalpha():
             alp_num += 1
+        #判断数字
         elif str[i].isdigit():
             dig_num += 1
+        #判断空格
         elif str[i].isspace():
             spa_num += 1
+        #其他
         else: oth_num +=1
 
     print ("字母总数为：",alp_num)
