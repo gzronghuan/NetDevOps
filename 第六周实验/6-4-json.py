@@ -5,4 +5,4 @@ import json
 from Source_DB import *
 
 with open('JSON_Phone.json', 'w', encoding='utf-8') as f:
-    json.dump(phone_dict,f,ensure_ascii=False)
+    json.dump(phone_dict,f,ensure_ascii=False,indent=4)
